@@ -23,6 +23,6 @@ They can be developed in most of the popular programming languages and are usual
 REST APIs live on the backend. This means they generally run on a remote server. 
 
 ### How do you access them?
-Generally, REST APIs use the HTTP protocol to communicate with the outside world. Each action will be assigned a URL path and accessed by a GET/POST/PUT/DELETE method. A great tool for testing APIs is [Postman](https://www.getpostman.com/downloads/)
+Generally, REST APIs use the HTTP protocol to communicate with the outside world. Each action will be assigned a URL path and accessed by a GET/POST/PUT/DELETE method. A great tool for working with APIs is [Postman](https://www.getpostman.com/downloads/).
 
 ## Exercise
