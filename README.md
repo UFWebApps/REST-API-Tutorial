@@ -1,4 +1,4 @@
-# REST API
+# REST APIs
 The glue between the frontend and backend
 
 ## FAQs
