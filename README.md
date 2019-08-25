@@ -25,4 +25,8 @@ REST APIs live on the backend. This means they generally run on a remote server.
 ### How do you access them?
 Generally, REST APIs use the HTTP protocol to communicate with the outside world. Each action will be assigned a URL path and accessed by a GET/POST/PUT/DELETE method. A great tool for working with APIs is [Postman](https://www.getpostman.com/downloads/).
 
+### What is Postman?
+Postman is an API development app that presents an easy to read GUI for users to construct requests and read responses. 
+
 ## Exercise
+To create your own sample REST API please follow this [exercise](https://medium.com/@onejohi/building-a-simple-rest-api-with-nodejs-and-express-da6273ed7ca9).
