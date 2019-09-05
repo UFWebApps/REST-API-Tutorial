@@ -1,6 +1,6 @@
 var express = require('express') // get the express dependency
 var app = express() // init express
-var listings = require('./listings.json')
+var planets = ['earth']
 
 // add middleware
 app.use((req, res, next) => {
@@ -8,19 +8,33 @@ app.use((req, res, next) => {
     next()
 })
 
-// add a handler for get requests to /hello
+// handle get reqs for /hello
 app.get('/hello', (req, res, next) => { 
-    res.json('world')
+    res.send('world')
 })
 
-// add a handler for get requests to /listings
-app.get('/listings', (req, res) => {
-    res.json(listings)
+// handle get reqs for /planets
+app.get('/planets', (req, res) => {
+    res.json(planets)
 })
 
-// add a handler for get requests to /listings/:id
-app.get('/listings/:id', (req, res) => {
-    res.json(listings.entries[req.params.id])
+// handle post reqs for /planets
+app.post('/planetz', (req, res) => {
+    console.log(req.body);
+    
+    planets.push(req.body.planet)
+    res.json(planets)
+})
+
+// handle get reqs for /planets/:id
+app.get('/planets/:id', (req, res) => {
+    const planet = planets[req.params.id]
+
+    if (planet) {
+        res.send(planet)
+    } else {
+        res.send('Invalid planet id')
+    }
 })
 
 // start app on port 3000
