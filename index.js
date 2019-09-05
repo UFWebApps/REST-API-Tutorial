@@ -5,8 +5,6 @@ var listings = require('./listings.json')
 // add middleware
 app.use((req, res, next) => {
     console.log(req.path)  
-    console.log(listings.entries[0]);
-    
     next()
 })
 
@@ -25,7 +23,7 @@ app.get('/listings/:id', (req, res) => {
     res.json(listings.entries[req.params.id])
 })
 
-// start the server on port 3000
+// start app on port 3000
 app.listen(3000, () => {
     console.log('Server running on port 3000')
 })
