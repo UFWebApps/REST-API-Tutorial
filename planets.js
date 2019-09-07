@@ -30,17 +30,6 @@ app.get('/planets', (req, res) => {
 })
 
 // handle get reqs for /planets/:id
-app.get('/planets/:id', (req, res) => {
-    const id = req.params.id
-    const planet = planets[id]
-    const validRequest = validateRequest(id, planet)
-
-    if (validRequest === true) {
-        res.send(planet)
-    } else {
-        res.send(validRequest)
-    }
-})
 
 // handle put reqs for /planets/:id
 app.put('/planets/:id', (req, res) => {
