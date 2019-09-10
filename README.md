@@ -4,10 +4,12 @@ The glue between the frontend and backend
 ## FAQs
 
 ### What is an API?
-An Application Program Interface (API) is a set of defined functions that access data, perform operations, and decouple applications. 
+An Application Program Interface (API) is a set of defined functions that access data, perform operations, and decouple applications, e.g., a library. 
 
 ### What is REST?
 Representational State Transfer (REST) is a software architecture for developing web services.
+
+[What exactly is RESTful programming?](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming)
 
 ### What is a REST API?
 Bringing these two concepts together, a REST API is a web service that has defined functions to retrieve data and perform operations. They decouple applications and works as a middle man between the frontend and the backend. 
