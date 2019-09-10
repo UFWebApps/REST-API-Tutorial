@@ -12,8 +12,6 @@ app.use((req, res, next) => {
     next()
 })
 
-console.log("Test")
-
 // handle post reqs for /planets
 app.post('/planets', (req, res) => {
     const planet = req.body.planet
